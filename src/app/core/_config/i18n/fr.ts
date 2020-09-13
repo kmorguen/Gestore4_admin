@@ -19,60 +19,60 @@ export const locale = {
         OR: 'Ou',
         SUBMIT_BUTTON: 'Soumettre',
         NO_ACCOUNT: 'Ne pas avoir de compte?',
-        SIGNUP_BUTTON: 'Registre',
+        SIGNUP_BUTTON: 'S\'inscrire',
         FORGOT_BUTTON: 'Mot de passe oublié',
-        BACK_BUTTON: 'Back',
+        BACK_BUTTON: 'Retour',
         PRIVACY: 'Privacy',
         LEGAL: 'Legal',
         CONTACT: 'Contact',
       },
       LOGIN: {
-        TITLE: 'Créer un compte',
-        BUTTON: 'Sign In',
+        TITLE: 'Connexion',
+        BUTTON: 'Connexion',
       },
       FORGOT: {
-        TITLE: 'Forgotten Password?',
-        DESC: 'Enter your email to reset your password',
-        SUCCESS: 'Your account has been successfully reset.'
+        TITLE: 'Mot de passe oublie?',
+        DESC: 'Entrez votre e-mail pour réinitialiser votre mot de passe',
+        SUCCESS: 'Votre compte a été réinitialisé avec succès.'
       },
       REGISTER: {
-        TITLE: 'Sign Up',
-        DESC: 'Enter your details to create your account',
-        SUCCESS: 'Your account has been successfuly registered.'
+        TITLE: 'S\'inscrire',
+        DESC: 'Entrez vos coordonnées pour créer votre compte',
+        SUCCESS: 'Votre compte a été enregistré avec succès.'
       },
       INPUT: {
         EMAIL: 'Email',
-        FULLNAME: 'Fullname',
+        FULLNAME: 'Nom entier',
         PASSWORD: 'Mot de passe',
-        CONFIRM_PASSWORD: 'Confirm Password',
+        CONFIRM_PASSWORD: 'Confirmer Mot de passe',
         USERNAME: 'Nom d\'utilisateur'
       },
       VALIDATION: {
         INVALID: '{{name}} n\'est pas valide',
         REQUIRED: '{{name}} est requis',
-        MIN_LENGTH: '{{name}} minimum length is {{min}}',
+        MIN_LENGTH: '{{name}} la taille minimale est {{min}}',
         AGREEMENT_REQUIRED: 'Accepting terms & conditions are required',
-        NOT_FOUND: 'The requested {{name}} is not found',
-        INVALID_LOGIN: 'The login detail is incorrect',
-        REQUIRED_FIELD: 'Required field',
-        MIN_LENGTH_FIELD: 'Minimum field length:',
-        MAX_LENGTH_FIELD: 'Maximum field length:',
-        INVALID_FIELD: 'Field is not valid',
+        NOT_FOUND: 'La requete {{name}}est introuvable',
+        INVALID_LOGIN: 'Le detail de connexion est invalide',
+        REQUIRED_FIELD: 'Champ important',
+        MIN_LENGTH_FIELD: 'Longueur minimale du champ:',
+        MAX_LENGTH_FIELD: 'Longueur maximale du champ:',
+        INVALID_FIELD: 'Champ non valide',
       }
     },
     ECOMMERCE: {
       COMMON: {
         SELECTED_RECORDS_COUNT: 'Nombre d\'enregistrements sélectionnés: ',
-        ALL: 'All',
-        SUSPENDED: 'Suspended',
+        ALL: 'Tout',
+        SUSPENDED: 'Suspendu',
         ACTIVE: 'Active',
-        FILTER: 'Filter',
-        BY_STATUS: 'by Status',
-        BY_TYPE: 'by Type',
+        FILTER: 'Filtre',
+        BY_STATUS: 'par Statut',
+        BY_TYPE: 'par Type',
         BUSINESS: 'Business',
-        INDIVIDUAL: 'Individual',
-        SEARCH: 'Search',
-        IN_ALL_FIELDS: 'in all fields'
+        INDIVIDUAL: 'Individuel',
+        SEARCH: 'Recherche',
+        IN_ALL_FIELDS: 'dans tous les champs'
       },
       ECOMMERCE: 'éCommerce',
       CUSTOMERS: {
@@ -88,7 +88,7 @@ export const locale = {
         DELETE_CUSTOMER_MULTY: {
           TITLE: 'Supprimer les clients',
           DESCRIPTION: 'Êtes-vous sûr de supprimer définitivement les clients sélectionnés?',
-          WAIT_DESCRIPTION: 'Les clients suppriment ...',
+          WAIT_DESCRIPTION: 'Suppression des clients ...',
           MESSAGE: 'Les clients sélectionnés ont été supprimés'
         },
         UPDATE_STATUS: {
