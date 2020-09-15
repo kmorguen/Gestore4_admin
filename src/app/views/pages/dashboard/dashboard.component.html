@@ -1,4 +1,30 @@
-<div class="container">
-	<div class="row">
+<div class="card-deck text-center">
+	<div class="card">
+		<img id="image" src="../../../../assets/media/png/cart.svg" class="card-img-top" alt="...">
+		<div class="card-body">
+			<h5 class="card-title">Ajouter un article </h5>
+			<p class="card-text">Ajouter un article de votre stock de produits.</p>
+			<button mat-button color="primary" (click)="onClick()">Ajouter</button>
+		</div>
+	</div>
+
+	<div class="card">
+		<img id="image" src="../../../../assets/media/png/013-shopping-cart-6.svg" class="card-img-top" alt="...">
+		<div class="card-body">
+			<h5 class="card-title">Supprimer un produit</h5>
+			<p class="card-text">Modifier les informations et le prix des articles dans le stock de produits.
+			</p>
+			<button mat-button color="primary" (click)="onClick2()">Supprimer</button>
+		</div>
+	</div>
+
+	<div class="card">
+		<img id="image" src="../../../../assets/media/png/stack.svg" class="card-img-top" alt="...">
+		<div class="card-body">
+			<h5 class="card-title">Modifier Stock</h5>
+			<p class="card-text">Modifier les informations et le prix des articles dans le stock de produits.
+			</p>
+			<button mat-button color="primary" (click)="onClick2()">Modifier</button>
+		</div>
 	</div>
 </div>

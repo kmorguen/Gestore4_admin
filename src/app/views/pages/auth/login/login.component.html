@@ -2,13 +2,11 @@
   <!--begin::Signin-->
   <div class="login-form login-signin">
     <div class="text-center mb-10 mb-lg-20">
-      <h3 class="font-size-h1">Connexion</h3>
+      <h3 class="font-size-h1">{{ "AUTH.LOGIN.NAME" | translate }}</h3>
       <p class="text-muted font-weight-bold">
-        Entrer le nom d'utilisateur et le mot de passe
+        {{ "AUTH.LOGIN.DETAIL" | translate }}
       </p>
     </div>
-
-    <kt-auth-notice></kt-auth-notice>
 
     <!--begin::Form-->
     <form class="form" [formGroup]="loginForm" autocomplete="off" novalidate="novalidate" id="kt_login_form">

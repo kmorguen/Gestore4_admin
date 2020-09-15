@@ -13,10 +13,9 @@
 
 				<!--begin: Aside content-->
 				<div class="flex-column-fluid d-flex flex-column justify-content-center">
-					<h3 class="font-size-h1 mb-5 text-white">Welcome to Metronic!</h3>
+					<h3 class="font-size-h1 mb-5 text-white">{{ "AUTH.LOGIN.ASIDE1" | translate }}</h3>
 					<p class="font-weight-lighter text-white opacity-80">
-						The ultimate Bootstrap, Angular 8, React & VueJS admin theme framework for next generation web
-						apps.
+						{{ "AUTH.LOGIN.ASIDE2" | translate }}
 					</p>
 				</div>
 				<!--end: Aside content-->
@@ -24,7 +23,7 @@
 				<!--begin: Aside footer for desktop-->
 				<div class="d-none flex-column-auto d-lg-flex justify-content-between mt-10">
 					<div class="opacity-70 font-weight-bold	text-white">
-						&copy; 2020 Metronic
+						&copy; 2020
 					</div>
 					<div class="d-flex">
 						<a href="#" class="text-white">Privacy</a>
@@ -42,26 +41,22 @@
 		<div class="flex-row-fluid d-flex flex-column position-relative p-7 overflow-hidden">
 			<!--begin::Content header-->
 			<div
-				class="position-absolute top-0 right-0 text-right mt-5 mb-15 mb-lg-0 flex-column-auto justify-content-center py-5 px-10"
-			>
+				class="position-absolute top-0 right-0 text-right mt-5 mb-15 mb-lg-0 flex-column-auto justify-content-center py-5 px-10">
+
 				<span class="font-weight-bold text-dark-50">
-					Don't have an account yet?
+					{{ "AUTH.LOGIN.ACCOUNT" | translate }}
 				</span>
-				<a
-					href="javascript:;"
-					routerLink="/auth/register"
-					class="font-weight-bold ml-2"
-					id="kt_login_signup"
-				>{{ "AUTH.GENERAL.SIGNUP_BUTTON" | translate }}</a>
+				<a href="javascript:;" routerLink="/auth/register" class="font-weight-bold ml-2"
+					id="kt_login_signup">{{ "AUTH.GENERAL.SIGNUP_BUTTON" | translate }}</a>
 			</div>
 			<!--end::Content header-->
-			
+
 			<router-outlet></router-outlet>
 			<!--begin::Content footer for mobile-->
 			<div
 				class="d-flex d-lg-none flex-column-auto flex-column flex-sm-row justify-content-between align-items-center mt-5 p-5">
 				<div class="text-dark-50 font-weight-bold order-2 order-sm-1 my-2">
-					&copy; 2020 Metronic
+					&copy; 2020
 				</div>
 				<div class="d-flex order-1 order-sm-2 my-2">
 					<a href="#" class="text-dark-75 text-hover-primary">Privacy</a>
