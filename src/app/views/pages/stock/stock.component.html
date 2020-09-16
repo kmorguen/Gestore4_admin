@@ -50,6 +50,9 @@
                     <ng-template matStepLabel>Selectionner l'image de l'article</ng-template>
                     <div class="container text-center">
                         <img [src]="url" height="200">
+                    </div>
+                    <br>
+                    <div class="container text-center">
                         <input type="file" (change)="onselectFile($event)">
                     </div>
                     <div>
