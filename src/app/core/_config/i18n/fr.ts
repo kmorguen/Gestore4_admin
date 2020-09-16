@@ -106,6 +106,15 @@ export const locale = {
           UPDATE_MESSAGE: "Le client a été mis à jour",
           ADD_MESSAGE: "Le client a été créé",
         },
+        HOME: {
+          ADD_ATCS: "Ajouter un article",
+          INFO1: "Ajouter un article de votre stock de produits.",
+          DROP_ATCS: "Supprimer un produit",
+          INFO2: "Enlever un article de votre stock de produits.",
+          CHANGE_ATCS: "Modifier Stock",
+          INFO3:
+            "Modifier les informations et le prix des articles dans le stock de produits.",
+        },
       },
     },
   },

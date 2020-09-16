@@ -1,61 +1,72 @@
-
-
 <div class="card">
     <img id="image" src="../../../../assets/media/png/047-cart.svg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title text-center">Ajouter un article</h5>
-      <mat-horizontal-stepper [linear]="isLinear" #stepper>
-        <mat-step [stepControl]="firstFormGroup">
-            <form [formGroup]="firstFormGroup">
-            <ng-template matStepLabel>Entrez le nom de l'article</ng-template>
-            <mat-form-field>
-                <mat-label>Nom de l'article</mat-label>
-                <input matInput placeholder="Article" formControlName="firstCtrl" required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperNext>Suivant</button>
-            </div>
-            </form>
-        </mat-step>
-    
-        <mat-step [stepControl]="secondFormGroup">
-            <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Choisissez la categorie de l'article</ng-template>
-            <mat-form-field>
-                <mat-label>Categorie</mat-label>
-                <input matInput formControlName="secondCtrl" placeholder="Choisissez la categorie"
-                        required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperPrevious>Precedent</button>
-                <button mat-button matStepperNext>Suivant</button>
-            </div>
-            </form>
-        </mat-step>
-    
-        <mat-step [stepControl]="thirdFormGroup">
-            <form [formGroup]="thirdFormGroup">
-                <ng-template matStepLabel>Entrez le montant de l'article</ng-template>
-                <mat-form-field>
-                <mat-label>Prix</mat-label>
-                <input matInput formControlName="thirdCtrl" placeholder="Prix du produit"
-                        required>
-                </mat-form-field>
+        <h5 class="card-title text-center">Ajouter un article</h5>
+        <mat-horizontal-stepper [linear]="isLinear" #stepper>
+
+            <mat-step [stepControl]="firstFormGroup">
+                <form [formGroup]="firstFormGroup">
+                    <ng-template matStepLabel>Entrez le nom de l'article</ng-template>
+                    <mat-form-field>
+                        <mat-label>Nom de l'article</mat-label>
+                        <input matInput placeholder="Article" formControlName="firstCtrl" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperNext>Suivant</button>
+                    </div>
+                </form>
+            </mat-step>
+
+            <mat-step [stepControl]="secondFormGroup">
+                <form [formGroup]="secondFormGroup">
+                    <ng-template matStepLabel>Choisissez la categorie de l'article</ng-template>
+                    <mat-form-field>
+                        <mat-label>Categorie</mat-label>
+                        <input matInput formControlName="secondCtrl" placeholder="Choisissez la categorie" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperPrevious>Precedent</button>
+                        <button mat-button matStepperNext>Suivant</button>
+                    </div>
+                </form>
+            </mat-step>
+
+            <mat-step [stepControl]="thirdFormGroup">
+                <form [formGroup]="thirdFormGroup">
+                    <ng-template matStepLabel>Entrez le montant de l'article</ng-template>
+                    <mat-form-field>
+                        <mat-label>Prix</mat-label>
+                        <input matInput formControlName="thirdCtrl" placeholder="Prix du produit" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperPrevious>Precedent</button>
+                        <button mat-button matStepperNext>Suivant</button>
+                    </div>
+                </form>
+            </mat-step>
+
+            <mat-step [stepControl]="fourthFormGroup">
+                <form [formGroup]="fourthFormGroup">
+                    <ng-template matStepLabel>Selectionner l'image de l'article</ng-template>
+                    <div class="container text-center">
+                        <img [src]="url" height="200">
+                        <input type="file" (change)="onselectFile($event)">
+                    </div>
+                    <div>
+                        <button mat-button matStepperPrevious>Precedent</button>
+                        <button mat-button matStepperNext>Suivant</button>
+                    </div>
+                </form>
+            </mat-step>
+
+            <mat-step>
+                <ng-template matStepLabel>Fait</ng-template>
+                <p>Vous avez fini maintenant.</p>
                 <div>
-                <button mat-button matStepperPrevious>Precedent</button>
-                <button mat-button matStepperNext>Suivant</button>
+                    <button mat-button matStepperPrevious>Precedent</button>
+                    <button mat-button (click)="stepper.reset()">Reset</button>
                 </div>
-            </form>
-        </mat-step>
-    
-        <mat-step>
-            <ng-template matStepLabel>Fait</ng-template>
-            <p>Vous avez fini maintenant.</p>
-            <div>
-            <button mat-button matStepperPrevious>Precedent</button>
-            <button mat-button (click)="stepper.reset()">Reset</button>
-            </div>
-        </mat-step>
-    </mat-horizontal-stepper>
+            </mat-step>
+        </mat-horizontal-stepper>
     </div>
-  </div>
+</div>

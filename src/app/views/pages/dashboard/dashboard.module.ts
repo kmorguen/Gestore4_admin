@@ -1,12 +1,16 @@
 // Angular
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { NgbDropdownModule, NgbTabsetModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import { CommonModule } from "@angular/common";
+import {
+  NgbDropdownModule,
+  NgbTabsetModule,
+  NgbTooltipModule,
+} from "@ng-bootstrap/ng-bootstrap";
 // Core Module
-import { CoreModule } from '../../../core/core.module';
-import { PartialsModule } from '../../partials/partials.module';
-import { DashboardComponent } from './dashboard.component';
+import { CoreModule } from "../../../core/core.module";
+import { PartialsModule } from "../../partials/partials.module";
+import { DashboardComponent } from "./dashboard.component";
 
 @NgModule({
   imports: [
@@ -15,8 +19,8 @@ import { DashboardComponent } from './dashboard.component';
     CoreModule,
     RouterModule.forChild([
       {
-        path: '',
-        component: DashboardComponent
+        path: "",
+        component: DashboardComponent,
       },
     ]),
     // ng-bootstrap modules
@@ -25,9 +29,6 @@ import { DashboardComponent } from './dashboard.component';
     NgbTooltipModule,
   ],
   providers: [],
-  declarations: [
-    DashboardComponent,
-  ]
+  declarations: [DashboardComponent],
 })
-export class DashboardModule {
-}
+export class DashboardModule {}

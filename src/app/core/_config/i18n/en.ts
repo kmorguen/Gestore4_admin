@@ -104,6 +104,15 @@ export const locale = {
           UPDATE_MESSAGE: "Customer has been updated",
           ADD_MESSAGE: "Customer has been created",
         },
+        HOME: {
+          ADD_ATCS: "Add an article",
+          INFO1: "Add an item to your product stock.",
+          DROP_ATCS: "Delete a product",
+          INFO2: "Remove an item from your stock of products.",
+          CHANGE_ATCS: "Change Stock,",
+          INFO3:
+            "Change the information and price of items in the stock of products.",
+        },
       },
     },
   },
