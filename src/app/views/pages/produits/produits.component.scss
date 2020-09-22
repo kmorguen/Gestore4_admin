@@ -1,5 +1,17 @@
-
-mat-grid-tile {
-    background: lightblue;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "poppins", "sans-serif";
 }
-
+.class-exemple {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

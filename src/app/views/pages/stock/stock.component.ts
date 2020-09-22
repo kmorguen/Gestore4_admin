@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { newArticlesService } from 'src/app/core/_base/layout/services/newArticles.service';
 
 @Component({
   selector: "kt-stock",
@@ -13,7 +14,7 @@ export class StockComponent implements OnInit {
   thirdFormGroup: FormGroup;
   fourthFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder, private newArticleService : newArticlesService  ){}
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({

@@ -1,7 +1,7 @@
 // Angular
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 // Translation
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService } from "@ngx-translate/core";
 
 export interface Locale {
   lang: string;
@@ -10,7 +10,7 @@ export interface Locale {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class TranslationService {
   // Private properties
@@ -23,10 +23,10 @@ export class TranslationService {
    */
   constructor(private translate: TranslateService) {
     // add new langIds to the list
-    this.translate.addLangs(['en']);
+    this.translate.addLangs(["en"]);
 
     // this language will be used as a fallback when a translation isn't found in the current language
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang("fr");
   }
 
   /**
@@ -37,7 +37,7 @@ export class TranslationService {
   loadTranslations(...args: Locale[]): void {
     const locales = [...args];
 
-    locales.forEach(locale => {
+    locales.forEach((locale) => {
       // use setTranslation() with the third argument set to true
       // to append translations instead of replacing them
       this.translate.setTranslation(locale.lang, locale.data, true);
@@ -58,7 +58,7 @@ export class TranslationService {
     if (lang) {
       this.translate.use(this.translate.getDefaultLang());
       this.translate.use(lang);
-      localStorage.setItem('language', lang);
+      localStorage.setItem("language", lang);
     }
   }
 
@@ -66,6 +66,6 @@ export class TranslationService {
    * Returns selected language
    */
   getSelectedLanguage(): any {
-    return localStorage.getItem('language') || this.translate.getDefaultLang();
+    return localStorage.getItem("language") || this.translate.getDefaultLang();
   }
 }

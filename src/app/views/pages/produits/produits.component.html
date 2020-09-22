@@ -1,8 +1,12 @@
-<mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile>Produit 1</mat-grid-tile>
-    <mat-grid-tile>Produit 2</mat-grid-tile>
-    <mat-grid-tile>Produit 3</mat-grid-tile>
-    <mat-grid-tile>Produit 4</mat-grid-tile>
-</mat-grid-list>
-  
-  
+<mat-card class="example-card">
+
+    <img mat-card-image src="../assets/media/png/télécharger.jpeg">
+    <mat-card-content>
+        *ngFor="let produit of produits"
+        [produit.name]= "produit.name"
+        [produit.prix]= "produit.prix"
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Modifier</button>
+    </mat-card-actions>
+</mat-card>
